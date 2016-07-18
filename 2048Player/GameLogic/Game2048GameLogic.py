@@ -11,11 +11,10 @@ class Game2048Logic:
     # be determined (assumed empty)
 
     def getCellVal(self, cellStr):
-         try:
+        try:
             return int(cellStr)
         except ValueError:
             return 0
-        return 0
 
     def pickAMove(self, boardCells):
         origBoard = []
